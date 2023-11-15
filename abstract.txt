@@ -1,0 +1,25 @@
+Конспект по Docker
+
+Команды для проверки работоспособности докера
+    docker --version
+    docker run hello-world
+
+
+
+    docker ps                                       список запущенных контейнеров
+    docker ps -a                                    список всех контейнеров, вне зависимости от их состояния
+    docker rm <container id> / <names>              удаляет контейнер 
+    docker images                                   список docker images на локальном репозитории
+    docker rmi <image id>                           удаляет docker image
+    docker run <image>                              создается новый контейнер
+    docker run -d <image> sleep 10                  запуск docker image в бекграунде на 10 секунд
+    docker run --rm <image>                         после завершения контейнера он удаляется из списка всех контейнеров
+    docker start <image>                            запускается контейнер
+    docker pause / unpause <container id>           поставить на паузу / возобновить контейнер
+    docker stop / kill <container id> / <names>     закончить / "убить" запущенный контейнер
+    docker inspect <container id>                   показывает всю информацию о контейнере
+    docker stats <container id>                     показывается статистику контейнера
+    docker logs <container id>                      показывает последние логи контейнера
+    docker logs -f <container id>                   показывает лайф логи контейнера
+    docker system prune -a --volumes                удаляет все images, containers (работает только если остановлены все контейнеры)
+    
