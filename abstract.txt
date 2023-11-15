@@ -1,0 +1,11 @@
+Конспект по Docker
+
+Команды для проверки работоспособности докера
+    docker --version
+    docker run hello-world
+
+
+
+    docker ps                               список запущенных контейнеров
+    docker ps -a                            список всех контейнеров, вне зависимости от их состояния
+    docker rm <container id> / <names>      удаляет контейнер
